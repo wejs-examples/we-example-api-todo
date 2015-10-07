@@ -11,6 +11,9 @@ module.exports = function (we) {
     // define you model here
     // see http://docs.sequelizejs.com/en/latest/docs/models-definition
     definition: {
+      title: { type: we.db.Sequelize.STRING },
+      description: { type: we.db.Sequelize.TEXT },
+      done: { type: we.db.Sequelize.BOOLEAN, defaultValue: false },
       // // Examples:
       // attrString: { type: we.db.Sequelize.STRING },
       // attrText: { type: we.db.Sequelize.TEXT, formFieldType: 'text' },
