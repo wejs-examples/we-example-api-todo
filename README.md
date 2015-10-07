@@ -4,9 +4,9 @@
 This is an example how to use We.js resource API.
 
 This example will be consumed by: 
-    - React.js
-    - Angular.js
-    - Ember.js
+- React.js
+- Angular.js
+- Ember.js
     
 ### How to test
 
