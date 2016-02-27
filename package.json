@@ -1,0 +1,36 @@
+{
+  "name": "we-project-tasks",
+  "version": "0.3.0",
+  "private": true,
+  "main": "./app.js",
+  "scripts": {
+    "dev": "node app.js --dev",
+    "verbose": "node app.js --prod",
+    "prod": "node app.js --prod",
+    "deps": "npm install && bower install",
+    "start": "node app.js",
+    "build": "gulp build",
+    "test": "NODE_ENV=test LOG_LV=info ./node_modules/.bin/mocha test/bootstrap.js test/**/*.test.js",
+    "prepublish": "npm prune"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "lodash": "^4.3.0",
+    "we-core": "0.3.122",
+    "we-plugin-bootstrap3": "0.3.2",
+    "we-plugin-file": "1.0.2",
+    "we-plugin-form": "0.3.29",
+    "we-plugin-menu": "0.3.16",
+    "we-plugin-vocabulary": "0.3.21",
+    "we-theme-admin-default": "1.0.0",
+    "we-theme-default": "^0.3.1"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "mocha": "2.4.5",
+    "sinon": "1.17.3",
+    "supertest": "^1.1.0",
+    "we-gulp-tasks-default": "0.3.0",
+    "we-test-tools": "0.3.11"
+  }
+}
