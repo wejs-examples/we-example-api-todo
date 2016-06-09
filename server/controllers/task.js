@@ -10,8 +10,6 @@ module.exports = {
 
     if (req.isAuthenticated()) {
       res.locals.query.where.creatorId = req.user.id;
-    } else {
-      return res.forbidden();
     }
 
     return res.locals.Model.findAndCountAll(res.locals.query)
